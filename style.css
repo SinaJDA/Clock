@@ -1,0 +1,89 @@
+body{
+    box-sizing: border-box;
+    height: 90vh;
+    background: rgb(12, 10, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clock{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: url(images-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid rgb(24, 21, 43);
+    border-radius: 50%;
+    box-shadow:inset 7px 8px 10px rgb(95, 95, 95),
+    7px 8px 15px rgb(95, 95, 95)
+    ,inset -7px -8px 15px black,
+    -7px -8px 15px black; 
+}
+
+.agrabe{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+.secandmin{
+    width: 5px;
+    height: 185px;
+    background: red;
+    border-radius:5px;
+    box-shadow: 0 0 1px white;
+    position: absolute;
+    transform-origin:bottom center;
+    transform:rotate(0deg);
+    margin: 0;
+}
+.dagige{
+     width: 10px;
+    height: 160px;
+    background: rgb(24, 21, 43);
+    border-radius:5px;
+    box-shadow: 0 0 1px white;
+    position: absolute;
+     transform-origin:bottom center;
+    transform: rotate(0deg);
+    margin: 0;
+}
+.horf{
+    width: 10px;
+    height: 120px;
+    background: rgb(24, 21, 43);
+    border-radius:5px;
+    box-shadow: 0 0 1px white;
+    position: absolute;
+     transform-origin:bottom center;
+    transform: rotate(0deg);
+    margin: 0;
+}
+
+.timer{
+position: absolute;
+bottom: 0;
+color: aliceblue;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.timer h1{
+    margin: 0 10px;
+    font-family: cursive;
+}
+
+p{
+    position: absolute;
+    top: 0;
+    color: aliceblue;
+    font-size: 50px;
+    font-family: sans-serif;
+}
